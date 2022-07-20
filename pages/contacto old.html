@@ -73,52 +73,31 @@
             <div class="container-fuid gx-0">
                 <div class="row gx-0 bg__dkgrey">
                     <article class="col-sm-12 col-md-5 col-lg-5 columna">
-                        <form class="m-2">
-                            <h1 class="text-white pt-3 mx-2">
+                        <form action="formulariodecontacto.php" class="form">
+                            <h1 class="text-white">
                                 ¡Dejános tu mensaje y nos comunicaremos con vos!</h1>
+                            <label for="nombre"></label>
+                            <input type="text" id="nombre" placeholder="Nombre">
+                            <label for="email" class=></label>
+                            <input type="email" id="email" placeholder="Email">
+                            <label for="telefono" class=></label>
+                            <input type="number" id="telefono" placeholder="Teléfono">
 
-                            <!-- datos -->
-                            <div class="form-group text-center">
-                                <label for="nombre"></label>
-                                <input type="text" class="form-control-sm" id="nombre" placeholder="Nombre">
-                            </div>
-                            <div class="form-group text-center">
-                                <label for="email"></label>
-                                <input type="email" class="form-control-sm" id="email" placeholder="Email">
-                            </div>
-                            <div class="form-group text-center pb-2">
-                                <label for="telefono"></label>
-                                <input type="number" class="form-control-sm" id="telefono" placeholder="Teléfono">
-                            </div>
+                            <p class="text-white"> Solicito info sobre: 
+                                <select name="solicito info sobre:" id="solicito info sobre:">
+                                    <option value="voluntario" >Quiero ser voluntarix</option>
+                                    <option value="adoptar" class="text__dkgrey">Quiero adoptar</option>
+                                    <option value="donación" class="text__dkgrey">Quiero hacer una donación</option>
+                                </select></p>
 
-                            <!-- select -->
-                            <div class="form-group text-center text-white pb-2">
-                            <label for="exampleFormControlSelect1">Solicito info sobre
-                            </label>
-                            <select class="custom-select custom-select-sm" id="solicitoinfo">
-                            <option>Quiero ser voluntario</option>
-                            <option>Quiero adoptar</option>
-                            <option>Quiero hacer una donación</option>
-                            </select>
-                            </div>
+                                <label for="mensaje" class=""></label>
+                                <textarea cols="40" rows="7" name="mensaje" id="mensaje" placeholder="Mensaje"></textarea>
 
-                            <!-- mensaje -->
-                            <div class="form-group text-center pb-2">
-                                <label for="mensaje"></label>
-                                <textarea class="form-control-sm" id="textarea" placeholder="Mensaje" rows="6"></textarea>
-                            </div>
-
-                            <!-- check -->
-                            <div class="text-center custom-control custom-checkbox custom-control-inline pb-2">
-                                <input class="custom-control-input" type="checkbox" value="quiere suscribirse al newsletter" id="newsletter">
-                                <label class="custom-control-label text-white" for="newletter"> Quiero suscribirme al newletter
-                                </label>
-                            </div>
-                           
-                            <!-- boton -->
-                            <div class="text-center pb-3">
-                            <button type="submit" id="boton" class="button-3d text__dkgrey pb-2">ENVIAR</button>
-                        </div>
+                            <p class="text-white"> Quiero suscribirme al newletter 
+                            <input type="checkbox" id="newsletter" value="quiere suscribirse al newsletter"
+                            class="checkmark"></p>
+                            
+                            <button type="submit" id="boton" class="button-3d text__dkgrey">ENVIAR</button>
                         </form>
                     </article>
 

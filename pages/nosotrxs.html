@@ -1,97 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Gatites del Centenario</title>
-        <link rel="shortcut icon" href="../img/favicon.png">
-        <link rel="stylesheet" href="../style.css">
-    </head>
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!--logo gatites-->
-    <body>
-        <div class="contenedor">
-            <header class="bg__dkgrey" id="header">
-                <a href="../index.html">
-                    <img
-                        src="../img/logo.png"
-                        alt="logo gatites del centenario"
-                        class="header__logo">
-                </a>
-            </header>
+    <title>Gatites del Centenario</title>
+    <link rel="shortcut icon" href="img/favicon.png">
 
-            <!--nav-->
-            <nav class="container__nav" id="mainNav">
-                <ul>
-                    <li>
-                        <a href="../index.html">HOME</a>
+    <!-- Bootstrap CSS -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+        crossorigin="anonymous">
+
+    <!-- mi CSS -->
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <header>
+    <!-- LOGO -->
+        <div class="text-center bg__dkgrey">
+            <a href="../index.html"><img src="../img/logo.png" alt="logo gatites del centenario" class="py-4 header__logo-md rotate"></a>
+        </div>
+    </header>
+        <!-- NAV -->
+    <nav class="navbar navbar-expand-md navbar-light bg-nav">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">
+                <img src="../img/logo.png" alt="logo gatites del centenario" class="py-4 mx-4 header__logo-sm rotate">
+            </a>
+
+            <button
+                class="navbar-toggler me-2"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        
+            <nav class="collapse navbar-collapse bg-white" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto me-auto mb-2 mb-lg-0 text-center nav-bar__links-list">
+                    <li class="nav-item nav-bar__list-item nav-bar__list-item--current">
+                        <a class="nav-link" href="../pages/nosotrxs.html">NOSOTRXS</a>
                     </li>
-                    <li>
-                        <a href="nosotrxs.html" class="bg__mdpink">SOBRE NOSOTRXS</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/adopciones.html">ADOPCIONES</a>
                     </li>
-                    <li>
-                        <a href="adopciones.html">ADOPCIONES</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/sumate.html">SUMATE</a>
                     </li>
-                    <li>
-                        <a href="sumate.html">SUMATE</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/contacto.html">CONTACTO</a>
                     </li>
-                    <li>
-                        <a href="contacto.html">CONTACTO</a>
-                    </li>
-                    <li>
-                        <a href="https://linktr.ee/gatitesdelcentenario" class="bg__mdgreen">DONA</a>
+                    <li class="nav-item">
+                        <a class="nav-link bg__mdgreen" href="https://linktr.ee/gatitesdelcentenario">DONA</a>
                     </li>
                 </ul>
             </nav>
-            <!--ends nav-->
-
-            <main id="main">
-                <section class="container__main bg__ltpink">
-                    <figure id="izq">
-                        <img src="../img/nosotrxs.jpg" alt="foto nosotrxs" class="nosotrxs__foto">
-                    </figure>
-
-                    <figure id="der1">
-                        <h1 class="verdana__text--L text__dkgrey">
-                            ¿Quiénes somos?<br><br></h1>
-                        <p class="helvetica__text--M text__dkgreen">
-                            Somos un grupo de voluntarixs que desde octubre del 2019
-                            <br>
-                            nos ocupamos de alimentar, brindar atención veterinaria
-                            <br>
-                            y dar en adopción responsable
-                            <br>
-                            a la colonia de 40 gatitxs abandonadxs en el Parque Centenario.<br>
-                            ¡Sumate o colaborá!</p>
-                    </figure>
-
-                    <figure id="der2">
-                        <h1 class="verdana__text--L text__dkgrey">
-                            ¿Por qué rescatamos?<br><br></h1>
-                        <p class="helvetica__text--M text__dkgrey">
-                            ¿Sabías que los gatos abandonados suelen enfermarse y vivir pocos años?<br>
-                            ¿Sabías que los gatos que viven a la interperie a veces no consiguen<br>
-                            alimento o son envenenados o atacados por perros?<br>
-                            ¿Sabías que una gata no castrada puede tener mas de 30 bebés por año?<br>
-                            ¿Sabías que muy pocos de esos sobreviven porque nacen enfermos?</p>
-                    </figure>
-                </section>
-            </main>
-
-            <!--footer-->
-            <footer class="bg__dkgrey" id="footer">
-                <div class="container__footer">
-                    <a href="https://www.facebook.com/gatitesdelcentenario" target="blank">
-                        <img src="../img/logoface.png" alt="logoface" class="footer__icon--sm"></a>
-                    <a href="https://www.tiktok.com/@gatitesdelcentenario?lang=es" target="blank">
-                        <img src="../img/logotiktok.png" alt="logotiktok" class="footer__icon--sm"></a>
-                    <a href="https://www.instagram.com/gatitesdelcentenario/" target="blank">
-                        <img src="../img/logoinsta.png" alt="logoinsta" class="footer__icon--sm"></a>
-                </div>
-            </footer>
-            <!--ends footer-->
-
         </div>
-    </body>
+    </nav>
+    <!--ends nav-->
+
+    <main>
+        <section>
+            <div class="container-fuid">
+                <div class="row gx-0 bg__ltpink">
+                    <article class="col-sm-12 col-md-5 col-lg-5">
+                        <img src="../img/nosotrxs.jpg" alt="foto nosotrxs" class="w-100">
+                    </article>
+                    <article class="col-sm-12 col-md-7 col-lg-7 columna">
+                        <figure class="column__text">
+                            <h1 class="text__dkgrey">
+                                ¿Quiénes somos?</h1>
+                            <p class="text__dkgreen">
+                                Somos un grupo de voluntarixs que desde octubre del 2019
+                                nos ocupamos de alimentar, brindar atención veterinaria
+                                y dar en adopción responsable
+                                a la colonia de 40 gatitxs abandonadxs en el Parque Centenario.</p>
+                            <p class="text__dkgreen">
+                                ¡Sumate o colaborá!</p>
+                        </figure>
+                        <figure class="column__text">
+                            <h1 class="text__dkgrey">
+                                ¿Por qué rescatamos?</h1>
+                            <p class="text__dkgrey">
+                                ¿Sabías que los gatos abandonados suelen enfermarse y vivir pocos años?</p>
+                            <p class="text__dkgrey">    
+                                ¿Sabías que los gatos que viven a la interperie a veces no consiguen
+                                alimento o son envenenados o atacados por perros?</p>
+                            <p class="text__dkgrey">
+                                ¿Sabías que una gata no castrada puede tener mas de 30 bebés por año?</p>
+                            <p class="text__dkgrey">
+                                ¿Sabías que muy pocos de esos sobreviven porque nacen enfermos?</p>
+                        </figure>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+<!--footer-->
+<footer class="container-fluid my-3 bg__dkgrey">
+    <div class="container__footer">
+        <a href="https://www.facebook.com/gatitesdelcentenario" target="blank">
+            <img src="../img/logoface.png" alt="logoface" class="me-3 footer__icon--sm"></a>
+        <a href="https://www.tiktok.com/@gatitesdelcentenario?lang=es" target="blank">
+            <img src="../img/logotiktok.png" alt="logotiktok" class="me-3 footer__icon--sm"></a>
+        <a href="https://www.instagram.com/gatitesdelcentenario/" target="blank">
+            <img src="../img/logoinsta.png" alt="logoinsta" class="me-3 footer__icon--sm"></a>
+    </div>
+</footer>
+<!--ends footer-->
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!-- <script
+    src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script> <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+crossorigin="anonymous"></script> -->
+</body>
 </html>
