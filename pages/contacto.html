@@ -10,14 +10,10 @@
     <link rel="shortcut icon" href="img/favicon.png">
 
     <!-- Bootstrap CSS -->
-    <link
-        href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-        rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-        crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
 
     <!-- mi CSS -->
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
@@ -28,14 +24,14 @@
         </div>
     </header>
         <!-- NAV -->
-    <nav class="navbar navbar-expand-md navbar-light bg-nav">
+    <nav class="navbar navbar-expand-md navbar-light bg-nav" id="botonera">
         <div class="container-fluid">
             <a class="navbar-brand" href="../index.html">
                 <img src="../img/logo.png" alt="logo gatites del centenario" class="py-4 mx-4 header__logo-sm rotate">
             </a>
 
             <button
-                class="navbar-toggler me-2"
+                class="navbar-toggler me-4"
                 type="button"
                 data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent"
@@ -46,8 +42,8 @@
             </button>
         
             <nav class="collapse navbar-collapse bg-white" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto me-auto mb-2 mb-lg-0 text-center nav-bar__links-list">
-                    <li class="nav-item nav-bar__list-item nav-bar__list-item--current">
+                <ul class="navbar-nav nav-pills mx-auto mb-lg-0 text-center nav-bar__links-list">
+                    <li class="nav-item">
                         <a class="nav-link" href="../pages/nosotrxs.html">NOSOTRXS</a>
                     </li>
                     <li class="nav-item">
@@ -57,10 +53,10 @@
                         <a class="nav-link" href="../pages/sumate.html">SUMATE</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../pages/contacto.html">CONTACTO</a>
+                        <a class="nav-link active" href="../pages/contacto.html">CONTACTO</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link bg__mdgreen" href="https://linktr.ee/gatitesdelcentenario">DONA</a>
+                        <a class="nav-link" href="https://linktr.ee/gatitesdelcentenario">DONA</a>
                     </li>
                 </ul>
             </nav>
@@ -71,58 +67,47 @@
     <main>
         <section>
             <div class="container-fuid gx-0">
-                <div class="row gx-0 bg__dkgrey">
-                    <article class="col-sm-12 col-md-5 col-lg-5 columna">
-                        <form class="m-2">
-                            <h1 class="text-white pt-3 mx-2">
+                <div class="row gx-0 bg__dkgrey px-4 py-4">
+                    <article class="col-sm-12 col-md-6 col-lg-5 ">
+                        <form class="form">
+                            <h1 class="text-white my-4">
                                 ¡Dejános tu mensaje y nos comunicaremos con vos!</h1>
 
                             <!-- datos -->
-                            <div class="form-group text-center">
-                                <label for="nombre"></label>
-                                <input type="text" class="form-control-sm" id="nombre" placeholder="Nombre">
-                            </div>
-                            <div class="form-group text-center">
-                                <label for="email"></label>
-                                <input type="email" class="form-control-sm" id="email" placeholder="Email">
-                            </div>
-                            <div class="form-group text-center pb-2">
-                                <label for="telefono"></label>
-                                <input type="number" class="form-control-sm" id="telefono" placeholder="Teléfono">
-                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <input type="text" class="form-control w-100 mb-2 " id="nombre" placeholder="Nombre">
+                                    <input type="email" class="form-control w-100 mb-2" id="email" placeholder="Email">
+                                    <input type="number" class="form-control w-100 mb-2" id="telefono" placeholder="Teléfono">
 
                             <!-- select -->
-                            <div class="form-group text-center text-white pb-2">
-                            <label for="exampleFormControlSelect1">Solicito info sobre
-                            </label>
-                            <select class="custom-select custom-select-sm" id="solicitoinfo">
-                            <option>Quiero ser voluntario</option>
-                            <option>Quiero adoptar</option>
-                            <option>Quiero hacer una donación</option>
-                            </select>
-                            </div>
+                                    <label class="text-white mb-1">Solicito info sobre</label>
+                                    <select class="form-select-sm text-dkgrey w-100 mb-3" id="solicitoinfo">
+                                    <option>Quiero ser voluntario</option>
+                                    <option>Quiero adoptar</option>
+                                    <option>Quiero hacer una donación</option>
+                                    </select>
 
                             <!-- mensaje -->
-                            <div class="form-group text-center pb-2">
-                                <label for="mensaje"></label>
-                                <textarea class="form-control-sm" id="textarea" placeholder="Mensaje" rows="6"></textarea>
-                            </div>
+                                    <textarea class="form-control-md w-100 mb-3" rows="6" id="textarea" placeholder="Mensaje" ></textarea>
 
                             <!-- check -->
-                            <div class="text-center custom-control custom-checkbox custom-control-inline pb-2">
-                                <input class="custom-control-input" type="checkbox" value="quiere suscribirse al newsletter" id="newsletter">
-                                <label class="custom-control-label text-white" for="newletter"> Quiero suscribirme al newletter
-                                </label>
-                            </div>
-                           
+                                    <div class="form-check d-flex mb-3">
+                                    <input class="form-check-input me-2" type="checkbox" value="quiere suscribirse al newsletter" id="newsletter">
+                                    <label class="form-check-input-label text-white" for="newletter"> Quiero suscribirme al newletter
+                                    </label>
+                                    </div>
+
                             <!-- boton -->
-                            <div class="text-center pb-3">
-                            <button type="submit" id="boton" class="button-3d text__dkgrey pb-2">ENVIAR</button>
-                        </div>
+                                    <div class="text-center">
+                                    <button type="submit" id="boton" class="button-3d text__dkgrey mb-3">ENVIAR</button>
+                                    </div>
+                                </div>
+                            </div>
                         </form>
                     </article>
 
-                    <article class="col-sm-12 col-md-7 col-lg-7 map-responsive">
+                    <article class="col-sm-12 col-md-6 col-lg-7 map-responsive my-4">
                         <iframe
                             class="iframe__mapa"
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.90753536289!2d-58.437822485139236!3d-34.60649958045875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca688994eb61%3A0xd055df0a7dafa86e!2sParque%20Centenario!5e0!3m2!1ses-419!2sar!4v1655349139808!5m2!1ses-419!2sar"
@@ -141,7 +126,7 @@
 
 <!--footer-->
 <footer class="container-fluid my-3 bg__dkgrey">
-    <div class="container__footer">
+    <div class="container__footer py-2">
         <a href="https://www.facebook.com/gatitesdelcentenario" target="blank">
             <img src="../img/logoface.png" alt="logoface" class="me-3 footer__icon--sm"></a>
         <a href="https://www.tiktok.com/@gatitesdelcentenario?lang=es" target="blank">
@@ -152,21 +137,7 @@
 </footer>
 <!--ends footer-->
 
-    <!-- Optional JavaScript; choose one of the two! -->
-
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script
-        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
-
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!-- <script
-    src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
-    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
-    crossorigin="anonymous"></script> <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
-    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
-crossorigin="anonymous"></script> -->
+    <!-- JavaScript -->
+    <script src="../js/bootstrap.min.js"></script>
 </body>
 </html>
