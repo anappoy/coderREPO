@@ -1,0 +1,39 @@
+/*//-- base nosotrxs y sumate --//*/
+.row {
+    padding-right: 0;
+    padding-left: 0 }
+
+.columna {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 20px 30px;
+    @media (min-width: 767px) {
+    padding: 10px 30px 0 30px}
+    @media (min-width: 1024px) {
+    padding: 30px 70px}
+}
+
+.column__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center }
+
+.textsumate__img-sm {
+    width:60vw;
+    @media (min-width: 520px) {
+    width:50vw}
+    @media (min-width: 621px) {
+    display: none}
+}
+
+.textsumate__img-md {
+    width:60vw;
+    @media (max-width: 620px) {
+    display: none}
+    @media (min-width: 767px) {
+    width:50vw}
+    @media (min-width: 1024px) {
+    width:35vw}
+}

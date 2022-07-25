@@ -1,0 +1,68 @@
+/*//-- common --//*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Verdana", "Helvetica", sans-serif }
+
+body {
+    padding: 0 2vw ;
+    @media (min-width: 1024px) {
+    padding: 0 5vw}}
+
+a {
+    cursor:url(img/cat_paw-vanilla.png), auto }
+
+
+/*//-- texto --//*/
+h1 {
+    font-size: $text_Md;
+    font-weight: $text_Bold;
+    text-align: center;
+    font-family: $Main_font;
+    line-height: 1.2em }
+
+p {
+    font-size: $text_Md;
+    font-weight: $text_Bold;
+    text-align: center;
+    font-family: $Secondary_font;
+    line-height: 1.4em;
+    margin-bottom: 0 }
+
+
+/*//-- color --//*/
+.bg__dkgrey {
+    background-color: $dkgrey-color }
+
+.bg-nav {
+    background-color: $dkgrey-color ;
+    @media (min-width: 767px) {
+    background-color: white}}
+
+.text__dkgrey {
+    color: $dkgrey-color ;
+    @media (max-width: 767px) {
+    margin:0.5em}}
+
+.text__white {
+    color: $white-color }
+
+.text__dkpink {
+    color: $dkpink-color }
+
+.bg__ltpink {
+    background-color: $ltpink-color }
+
+.text__dkgreen {
+    color: $dkgreen-color }
+
+.bg__limegreen {
+    background: $ltgreen-gradient;
+    padding: 15px }
+
+
+
+
+
+

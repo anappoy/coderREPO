@@ -1,0 +1,72 @@
+/*//-- logo gatites --//*/
+.header__logo-md {
+	width:100px ;
+	@media (max-width: 767px) {
+	display: none}
+
+	&:hover {
+		transform: rotatez(30deg);
+		cursor: url(img/cat_paw-pink.png), auto ;
+		transition: transform 1s }}
+
+.header__logo-sm {
+	width:80px ;
+	@media (min-width: 767px) {
+	display: none}}
+
+
+/*//-- nav --//*/
+#botonera {
+	ul {
+		li {
+			a {
+				color: $dkgrey-color;
+				text-decoration: none ;
+				font-family: $Main_font;
+				font-size: $text_Md;
+				line-height: 1em ;
+				font-weight: $text_Bold ;
+				margin: 0 10px ;
+
+    &:last-child {
+			a {
+				&:hover {
+				background-color: $mdgreen-color 
+}}}}}}}
+
+.nav-pills .nav-link.active,
+.show.nav-pills .nav-link {
+    background-color: $mdpink-color}
+
+.navbar-toggler {
+    color: rgba(0,0,0,.55);
+    border-color: $white-color;
+
+	.navbar-toggler-icon{
+		background-color: #dcdcdc;
+		filter:invert(100%);
+		width: 1.5em;
+		height: 2em;
+		border-radius:5%;
+		left:15%;
+}}
+
+
+/*//-- footer --//*/
+.container__footer {
+    display: flex;
+    justify-content: end }
+
+.footer__icon--sm {
+    width: 30px;
+    list-style: none;
+    display: flex ;
+
+&:hover {
+    transform: scale(1.1) ;
+    cursor: url(img/cat_paw-vanilla.png), auto;
+    transition: transform 1s 
+}}
+
+
+
