@@ -43,7 +43,7 @@ encabezado h1: ¡Dejános tu mensaje y nos comunicaremos con vos!
 Rosita
 
 título: Gatites del Centenario - Rosita en adopción
-descripción: Somos un grupo de voluntarixs que se ocupa de alimentar, brindar atención veterinaria y dar en adopción responsable a los gatitxs abandonadxs en el Parque Centenario
+descripción: Ella es Rosita; una gatita un poco tímida, dulce y mimosa.
 palabras clave: gato, gatos, gatito, gatitos, gatita, gatitas, adopcion, hogar
 encabezado h1: 
 
