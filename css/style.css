@@ -1,0 +1,513 @@
+/*//-- colores --//*/
+/*//-- mapa colores --//*/
+/*//-- texto --//*/
+/*//-- width 100% --//*/
+/*//--extends--//*/
+.button-base, .button-3d, .view a.button-info {
+  display: inline-block;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+.d-flex_center, .map-responsive, .column__text, .container__index {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*//--mixin--//*/
+/*//-- logo gatites --//*/
+.header__logo-md {
+  width: 100px;
+}
+@media (max-width: 767px) {
+  .header__logo-md {
+    display: none;
+  }
+}
+.header__logo-md:hover {
+  transform: rotatez(30deg);
+  cursor: url(../img/cat_paw-pink.png), auto;
+  transition: transform 1s;
+}
+
+.header__logo-sm {
+  width: 80px;
+}
+@media (min-width: 767px) {
+  .header__logo-sm {
+    display: none;
+  }
+}
+
+/*//-- nav --//*/
+#botonera ul li a {
+  color: rgb(35, 35, 35);
+  text-decoration: none;
+  font-family: Verdana;
+  font-size: 1em;
+  line-height: 1em;
+  font-weight: 550;
+  margin: 0 10px;
+}
+#botonera ul li a:hover {
+  background-color: rgb(251, 186, 234);
+}
+#botonera ul li:last-child a:hover {
+  background-color: rgb(102, 226, 116);
+}
+
+.nav-pills .nav-link.active,
+.show.nav-pills .nav-link {
+  background-color: rgb(251, 186, 234);
+}
+
+.navbar-toggler {
+  width: 50px;
+  height: 50px;
+  fill: rgba(255, 255, 255, 0.7);
+  border-color: rgba(255, 255, 255, 0.7);
+}
+.navbar-toggler rect {
+  width: 100%;
+  height: 7px;
+}
+
+/*//-- footer --//*/
+.container__footer {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  flex-direction: row;
+}
+
+.footer__icon--sm {
+  width: 30px;
+  list-style: none;
+  display: flex;
+}
+.footer__icon--sm:hover {
+  transform: scale(1.1);
+  cursor: url(../img/cat_paw-vanilla.png), auto;
+  transition: transform 1s;
+}
+
+/*//-- common --//*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Verdana", "Helvetica", sans-serif;
+}
+
+body {
+  padding: 0 2vw;
+}
+@media (min-width: 1024px) {
+  body {
+    padding: 0 5vw;
+  }
+}
+
+a {
+  cursor: url(../img/cat_paw-vanilla.png), auto;
+}
+
+/*//-- texto --//*/
+h1, h2 {
+  font-size: 1em;
+  line-height: 1.2em;
+  font-weight: 550;
+  text-align: center;
+  font-family: Verdana;
+}
+
+p {
+  font-size: 1em;
+  line-height: 1.4em;
+  font-weight: 550;
+  text-align: center;
+  font-family: Helvetica;
+  margin-bottom: 0;
+}
+
+/*//-- color --//*/
+.bg-nav {
+  background-color: rgb(35, 35, 35);
+}
+@media (min-width: 767px) {
+  .bg-nav {
+    background-color: rgb(247, 244, 241);
+  }
+}
+
+.bg__dkgrey {
+  background-color: rgb(35, 35, 35);
+}
+
+.bg__ltpink {
+  background-color: rgb(246, 203, 245);
+}
+
+.bg__mdgreen {
+  background-color: rgb(102, 226, 116);
+}
+
+.bg__limegreen {
+  background: linear-gradient(180deg, rgb(228, 247, 197) 0%, rgb(194, 239, 172) 100%);
+}
+
+.text__dkgrey {
+  color: rgb(35, 35, 35);
+}
+@media (max-width: 767px) {
+  .text__dkgrey {
+    margin: 0.5em;
+  }
+}
+
+.text__white {
+  color: rgb(247, 244, 241);
+}
+
+.text__dkpink {
+  color: rgb(255, 130, 222);
+}
+
+.text__dkgreen {
+  color: rgb(50, 125, 41);
+}
+
+/*//-- base index --//*/
+.container__index {
+  overflow: hidden;
+  position: relative;
+}
+@media (min-width: 767px) {
+  .container__index {
+    height: 1000px;
+  }
+}
+
+.foto__index {
+  width: 100%;
+  position: relative;
+}
+
+/*//-- animaciones index --//*/
+.textos_index {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  overflow: hidden;
+  height: 100%;
+  animation-name: bounceY;
+  animation-iteration-count: inherit;
+  animation-timing-function: ease-in-out;
+  animation-duration: 1.5s;
+  transition-delay: 5s;
+}
+
+.texto1__index {
+  width: 60%;
+  text-align: center;
+  position: relative;
+  top: 30%;
+}
+@media (min-width: 850px) {
+  .texto1__index {
+    top: 27%;
+  }
+}
+@media (min-width: 1024px) {
+  .texto1__index {
+    top: 25%;
+  }
+}
+
+.texto2__index {
+  width: 40%;
+  text-align: center;
+  position: relative;
+  top: 60%;
+}
+@media (min-width: 850px) {
+  .texto2__index {
+    top: 62%;
+  }
+}
+@media (min-width: 1024px) {
+  .texto2__index {
+    top: 65%;
+  }
+}
+
+@keyframes bounceY {
+  0% {
+    transform: translateY(-50%);
+  }
+  40% {
+    transform: translateY(-25%);
+  }
+  65% {
+    transform: translateY(-13%);
+  }
+  82% {
+    transform: translateY(-7%);
+  }
+  92% {
+    transform: translateY(-3%);
+  }
+  55%, 75%, 87%, 97%, 100% {
+    transform: translateY(0px);
+  }
+}
+/*//-- base nosotrxs y sumate --//*/
+.row {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.columna {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px 30px;
+}
+@media (min-width: 767px) {
+  .columna {
+    padding: 10px 30px 0 30px;
+  }
+}
+@media (min-width: 1024px) {
+  .columna {
+    padding: 30px 70px;
+  }
+}
+
+.column__text {
+  flex-direction: column;
+}
+
+.textsumate__img-sm {
+  width: 60vw;
+}
+@media (min-width: 520px) {
+  .textsumate__img-sm {
+    width: 50vw;
+  }
+}
+@media (min-width: 621px) {
+  .textsumate__img-sm {
+    display: none;
+  }
+}
+
+.textsumate__img-md {
+  width: 60vw;
+}
+@media (max-width: 620px) {
+  .textsumate__img-md {
+    display: none;
+  }
+}
+@media (min-width: 767px) {
+  .textsumate__img-md {
+    width: 50vw;
+  }
+}
+@media (min-width: 1024px) {
+  .textsumate__img-md {
+    width: 35vw;
+  }
+}
+
+/*//-- base adopciones --//*/
+.view {
+  border: 10px solid rgb(247, 244, 241);
+  margin: 10px;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  box-shadow: 1px 1px 2px #e6e6e6;
+}
+
+.view .mask, .view .content {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+}
+
+.view h2 {
+  text-transform: uppercase;
+  color: rgb(247, 244, 241);
+  text-align: center;
+  position: relative;
+  font-size: 17px;
+  padding: 10px;
+  background: rgb(35, 35, 35);
+  margin: 20px 0 0 0;
+}
+
+.view p {
+  font-size: 1em;
+  line-height: 1.4em;
+  font-weight: 550;
+  color: rgb(35, 35, 35);
+  position: relative;
+  padding: 10px 20px 20px;
+  text-align: center;
+}
+
+.view a.button-info {
+  background: rgb(35, 35, 35);
+  color: rgb(247, 244, 241);
+  box-shadow: 0 0 1px #000;
+}
+
+.view a.button-info:hover {
+  box-shadow: 0 0 5px #000;
+}
+
+.view2 h2 {
+  text-transform: uppercase;
+  color: rgb(247, 244, 241);
+  text-align: center;
+  position: relative;
+  font-size: 16px;
+  padding: 10px;
+  background: rgb(35, 35, 35);
+  margin: 20px 0 0 0;
+}
+
+/*//-- animaciones adopciones --//*/
+.view-first .mask {
+  opacity: 0;
+  background-color: rgba(255, 255, 255, 0.7);
+  transition: all 0.4s ease-in-out;
+}
+
+.view-first h1 {
+  transform: translateY(-100px);
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+}
+
+.view-first p {
+  transform: translateY(100px);
+  opacity: 0;
+  transition: all 0.2s linear;
+}
+
+.view-first a.botton-info {
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+}
+
+.view-first:hover img {
+  transform: scale(1.1);
+}
+
+.view-first:hover .mask {
+  opacity: 1;
+}
+
+.view-first:hover h1,
+.view-first:hover p,
+.view-first:hover a.botton-info {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+.view-first:hover p {
+  transition-delay: 0.1s;
+}
+
+.view-first:hover a.botton-info {
+  transition-delay: 0.2s;
+}
+
+/*//-- form --//*/
+.form {
+  margin: 10px 20px;
+}
+@media (min-width: 767px) {
+  .form {
+    margin: 40px 30px 0 30px;
+  }
+}
+@media (min-width: 1024px) {
+  .form {
+    margin: 50px 50px;
+  }
+}
+
+label {
+  display: block;
+}
+
+input, textarea {
+  border: none;
+  box-sizing: border-box;
+}
+
+.check {
+  display: inline-block;
+  justify-content: end;
+}
+
+.checkmark {
+  position: right;
+  margin: 10px;
+  background-color: rgb(247, 244, 241);
+}
+
+/*//-- boton --//*/
+.button-3d {
+  font-size: 1em;
+  line-height: 1.1em;
+  font-weight: 550;
+  padding: 10px 10px;
+  min-width: 130px;
+  color: rgb(35, 35, 35);
+  font-family: Verdana;
+  transition: all 0.3s ease;
+  position: relative;
+  background: rgb(194, 239, 172);
+  box-shadow: 0 5px rgb(102, 226, 116);
+}
+.button-3d:hover {
+  box-shadow: 0 3px rgb(102, 226, 116);
+  top: 1px;
+}
+.button-3d:hover:active {
+  box-shadow: 0 0 rgb(102, 226, 116);
+  top: 5px;
+}
+
+/*//-- mapa --//*/
+.map-responsive {
+  overflow: hidden;
+  position: relative;
+  padding: 0px 10px;
+}
+
+.iframe__mapa {
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .iframe__mapa {
+    width: 90%;
+    height: 80%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

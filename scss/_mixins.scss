@@ -1,0 +1,27 @@
+/*//--extends--//*/
+.button-base {
+    display: inline-block;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+.d-flex_center {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*//--mixin--//*/
+@mixin d-flex ($justify,$align,$direction){
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $direction;
+}
+
+@mixin texto ($font_size, $line_height, $font_weight){
+    font-size: $font_size;
+    line-height: $line_height;
+    font-weight: $font_weight;
+}

@@ -1,110 +1,187 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Gatites del Centenario</title>
-        <link rel="shortcut icon" href="../img/favicon.png">
-        <link rel="stylesheet" href="../style.css">
-    </head>
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Te presentamos a nuestros gatitos rescatados que están esperando un hogar definitivo">
+    <meta name="keywords" content="gato, gatos, gatito, gatitos, gatita, gatitas, adopcion, hogar">
 
-    <!--logo gatites-->
-    <body>
-        <div class="contenedor">
-            <header class="bg__dkgrey" id="header">
-                <a href="../index.html">
-                    <img
-                        src="../img/logo.png"
-                        alt="logo gatites del centenario"
-                        class="header__logo">
-                </a>
-            </header>
+    <title>Gatites del Centenario - En Adopción</title>
+    <link rel="shortcut icon" href="img/favicon.png">
 
-            <!--nav-->
-            <nav class="container__nav " id="mainNav">
-                <ul>
-                    <li>
-                        <a href="../index.html">HOME</a>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+
+    <!-- mi CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <header>
+    <!-- LOGO -->
+        <div class="text-center bg__dkgrey">
+            <a href="../index.html"><img src="../img/logo.png" alt="logo gatites del centenario" class="py-4 header__logo-md rotate"></a>
+        </div>
+    </header>
+        <!-- NAV -->
+    <nav class="navbar navbar-expand-md navbar-light bg-nav" id="botonera">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">
+                <img src="../img/logo.png" alt="logo gatites del centenario" class="py-4 mx-4 header__logo-sm rotate">
+            </a>
+
+            <button class="navbar-toggler me-4" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <svg viewBox="0 0 100 80">
+                    <rect></rect>
+                    <rect y="30"></rect>
+                    <rect y="60"></rect>
+                </svg>
+            </button>
+        
+            <nav class="collapse navbar-collapse bg-white" id="navbarSupportedContent">
+                <ul class="navbar-nav nav-pills mx-auto mb-lg-0 text-center nav-bar__links-list">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/nosotrxs.html">NOSOTRXS</a>
                     </li>
-                    <li>
-                        <a href="nosotrxs.html">SOBRE NOSOTRXS</a>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="../pages/adopciones.html" rel="nofollow">EN ADOPCION</a>
                     </li>
-                    <li>
-                        <a href="adopciones.html" class="bg__mdpink">ADOPCIONES</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/sumate.html">SUMATE</a>
                     </li>
-                    <li>
-                        <a href="sumate.html">SUMATE</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/contacto.html">CONTACTO</a>
                     </li>
-                    <li>
-                        <a href="contacto.html">CONTACTO</a>
-                    </li>
-                    <li>
-                        <a href="https://linktr.ee/gatitesdelcentenario" class="bg__mdgreen">DONA</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://linktr.ee/gatitesdelcentenario">DONA</a>
                     </li>
                 </ul>
             </nav>
-            <!--ends nav-->
+        </div>
+    </nav>
+    <!--ends nav-->
 
-            <main id="main">
-                <section class="container__adopciones">
-                    <h1 id="en-adopcion" class="verdana__text--XL bg__limegreen">Gatites en adopción
-                    </h1>
-                        <div id=Agatha>
-                            <img src="../img/Agatha.jpg" width="200" height="200" alt="Agatha">
-                            <p class="verdana__text--M">Agatha</p>
-                            <p class="verdana__text--M"> Hembra - 4 años</p>
-                            <p class="helvetica__text--S"> Lejos del amor y el cuidado, Agatha se crió y vivió en un lugar muy crudo y
-                                hostil; es por ésto que es un poco desconfiada. Es VILEF+ . La rescatamos hace
-                                más de un año y luego de muuucha paciencia y perseverancia, hoy hace todo lo que
-                                una gatita debería hacer. Juega, hace lío, amasa y es la ama y dueña delsu hogar
-                                transitorio.</p>
+<main>
+    <section>
+        <div class="container-fluid gx-0">
+            <h1 class="bg__limegreen py-3">Gatites en adopción</h1>
+            <div class="row">
+                <article class="col-sm-12 col-md-6 col-lg-3">
+                    <figure class="view view-first">
+                            <img src="../img/Agatha.jpg" alt="Agatha" class="w-100">
+                        <div class="mask">
+                            <h2>Agatha</h2>
+                            <p>Hembra - 4 años</p>
+                            <p>Se crió en un lugar muy hostil es por esto que es un poco desconfiada, VILEF+</p>
+                                <a href="#" class="button-info">Más info</a>  
                         </div>
-                        <div id=Viernes>
-                            <img src="../img/Viernes.jpg" width="200" height="200" alt="Viernes">
-                            <p class="verdana__text--M">Viernes</p>
-                            <p class="verdana__text--M"> Macho - 1 año</p>
-                            <p class="helvetica__text--S">Es un gato muy compañero, mimoso, juguetón y amoroso… y ni hablemos de su
-                                belleza! Viernes le hace honor a su nombre, es lo que estabas esperando para
-                                poder descansar del estrés de la semana con él a tu lado durmiendo largas
-                                siestas al sol.</p>
+                    </figure>
+                </article>
+
+                <article class="col-sm-12 col-md-6 col-lg-3">
+                    <figure class="view view-first">
+                            <img src="../img/Viernes.jpg" alt="Viernes" class="w-100">
+                        <div class="mask">
+                            <h2>Viernes</h2>
+                            <p>Macho - 1 año</p>
+                            <p>Es un gato muy compañero, mimoso, juguetón y amoroso… </p>
+                            <a href="#" class="button-info">Más info</a>  
                         </div>
-                        <div id=Chapli>
-                            <img src="../img/Chaplina.jpg" width="200" height="200" alt="Chaplina">
-                            <p class="verdana__text--M">Chaplina</p>
-                            <p class="verdana__text--M"> Hembra - 1 1/2 año </p>
-                            <p class="helvetica__text--S">La tiraron en el Parque hace unos meses porque estaba preñada. Tuvo a dos
-                                hermosas gatitas, Chiche y Lila.Tenía micoplasma pero por suerte pudimos curarla
-                                y castrarla. Es una gata mimosa, agradecida desde el primer día con quienes la
-                                rescataron a ella y a sus bebitas.Se lleva muy bien con otros gatos y le encanta
-                                jugar con cajas de cartón.</p>
+                    </figure>
+                </article>
+
+                <article class="col-sm-12 col-md-6 col-lg-3">
+                    <figure class="view view-first">
+                            <img src="../img/Chaplina.jpg" alt="Chaplina" class="w-100">
+                        <div class="mask">
+                            <h2>Chaplina</h2>
+                            <p>Hembra - 1 1/2 año</p>
+                            <p>Se lleva muy bien con otros gatos y le encanta jugar con cajas de cartón. </p>
+                            <a href="#" class="button-info">Más info</a>  
                         </div>
-                        <div id=Chiche>
-                            <img src="../img/Chiche.jpg" width="200" height="200" alt="Chiche">
-                            <p class="verdana__text--M">Chiche</p>
-                            <p class="verdana__text--M"> Hembra 5 meses </p>
-                            <p class="helvetica__text--S">Nació un dia despues de que la rescatamos a su mamá que fue tirada en el
-                                Parque. Tuvo una hermanita con quien jugó e hizo un monton de travesuras. Ahora
-                                que su hermana fue adoptada, esta buscando un hogar que la reciba con mucho
-                                amor...lo ideal seria tener otro hermanite para poder jugar, divertirse y dormir
-                                abrazades.</p>
-                            </div>
+                    </figure>
+                </article>
 
-                </section>
-            </main>
+                <article class="col-sm-12 col-md-6 col-lg-3">
+                    <figure class="view view-first">
+                            <img src="../img/Chiche.jpg" alt="Chiche" class="w-100">
+                        <div class="mask">
+                            <h2>Chiche</h2>
+                            <p>Hembra - 5 meses</td>
+                            <p>Nació un día después de que rescatamos a su mamá. Es juguetona, traviesa y mimosa </p>
+                            <a href="#" class="button-info">Más info</a>  
+                        </div>
+                    </figure>
+                </article>
 
-            <!--footer-->
-            <footer class="bg__dkgrey" id="footer">
-                <div class="container__footer">
-                    <a href="https://www.facebook.com/gatitesdelcentenario" target="blank">
-                        <img src="../img/logoface.png" alt="logoface" class="footer__icon--sm"></a>
-                    <a href="https://www.tiktok.com/@gatitesdelcentenario?lang=es" target="blank">
-                        <img src="../img/logotiktok.png" alt="logotiktok" class="footer__icon--sm"></a>
-                    <a href="https://www.instagram.com/gatitesdelcentenario/" target="blank">
-                        <img src="../img/logoinsta.png" alt="logoinsta" class="footer__icon--sm"></a>
-                </div>
-            </footer>
-            <!--ends footer-->
+                <article class="col-sm-12 col-md-6 col-lg-3">
+                    <figure class="view view-first">
+                            <img src="../img/Matias.jpg" alt="Matías" class="w-100">
+                        <div class="mask">
+                            <h2>Matías</h2>
+                            <p>Macho - 7 meses</p>
+                            <p>A Matías le cuesta mucho entrar en confianza con personas pero ama jugar con otros gatitos.</p>
+                                <a href="#" class="button-info">Más info</a>  
+                        </div>
+                    </figure>
+                </article>
 
-        </body>
-    </html>
+                <article class="col-sm-12 col-md-6 col-lg-3">
+                    <figure class="view view-first">
+                            <img src="../img/Rosita.jpg" alt="Rosita" class="w-100">
+                        <div class="mask">
+                            <h2>Rosita</h2>
+                            <p>Hembra - 7 meses</p>
+                            <p>Rosita es muy tranquila, y un poco tímida. Le gusta mucho dormir en lugares donde se siente protegida. </p>
+                            <a href="../pages/enadopcion-Rosita.html" class="button-info">Más info</a>  
+                        </div>
+                    </figure>
+                </article>
+
+                <article class="col-sm-12 col-md-6 col-lg-3">
+                    <figure class="view view-first">
+                            <img src="../img/Martita.jpg" alt="Martita" class="w-100">
+                        <div class="mask">
+                            <h2>Martita</h2>
+                            <p>Hembra - 7 meses</p>
+                            <p>Es una gatita cariñosa. Confía rapidamente en las personas e inmediatamente pide mimos. </p>
+                            <a href="#" class="button-info">Más info</a>  
+                        </div>
+                    </figure>
+                </article>
+
+                <article class="col-sm-12 col-md-6 col-lg-3">
+                    <figure class="view view-first">
+                            <img src="../img/Andres.jpg" alt="Andres" class="w-100">
+                        <div class="mask">
+                            <h2>ANDRES</h2>
+                            <p>Macho - 7 meses</td>
+                            <p>Es un gatito muy dulce y mimoso, disfruta tomar largas siestas en el sol. </p>
+                            <a href="#" class="button-info">Más info</a>  
+                        </div>
+                    </figure>
+                </article>
+            </div>                                    
+        </div>
+    </section>
+</main>
+
+<!--footer-->
+<footer class="container-fluid my-3 bg__dkgrey">
+    <div class="container__footer py-2">
+        <a href="https://www.facebook.com/gatitesdelcentenario" target="blank">
+            <img src="../img/logoface.png" alt="logoface" class="me-3 footer__icon--sm"></a>
+        <a href="https://www.tiktok.com/@gatitesdelcentenario?lang=es" target="blank">
+            <img src="../img/logotiktok.png" alt="logotiktok" class="me-3 footer__icon--sm"></a>
+        <a href="https://www.instagram.com/gatitesdelcentenario/" target="blank">
+            <img src="../img/logoinsta.png" alt="logoinsta" class="me-3 footer__icon--sm"></a>
+    </div>
+</footer>
+<!--ends footer-->
+
+    <!-- JavaScript -->
+    <script src="../js/bootstrap.min.js"></script>
+</body>
+</html>

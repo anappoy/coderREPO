@@ -1,0 +1,52 @@
+/*//-- base index --//*/
+.container__index {
+    @extend .d-flex_center;
+	overflow: hidden ;
+	position: relative ;
+	@media (min-width: 767px) {
+	height: 1000px}}
+
+.foto__index  {
+    width:$w-100;
+    position: relative}
+
+
+/*//-- animaciones index --//*/
+.textos_index  {
+	@include d-flex (start,center,column);
+	position: absolute ;
+	overflow: hidden ;
+	height: 100% ;
+	animation-name: bounceY ;
+	animation-iteration-count: inherit ;
+	animation-timing-function: ease-in-out ;
+	animation-duration: 1.5s ;
+	transition-delay: 5s }
+
+.texto1__index{
+	width: 60% ;
+	text-align: center ;
+	position: relative ;
+	top: 30% ;
+	@media (min-width: 850px) {
+	top: 27%}
+	@media (min-width: 1024px) {
+	top: 25%}}
+
+.texto2__index {
+	width: 40% ;
+	text-align: center; 
+	position: relative ;
+	top: 60% ;
+	@media (min-width: 850px) {
+	top: 62%}
+	@media (min-width: 1024px) {
+	top: 65%}}
+
+@keyframes bounceY {
+	0% { transform: translateY(-50%);}
+	40% { transform: translateY(-25%);}
+	65% { transform: translateY(-13%);}
+	82% { transform: translateY(-7%);}
+	92% { transform: translateY(-3%);}
+	55%, 75%, 87%, 97%, 100% { transform: translateY(0px);}}

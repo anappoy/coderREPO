@@ -1,0 +1,50 @@
+Index
+
+título: Gatites del Centenario - Inicio
+descripción: Somos un grupo de voluntarixs que se ocupa de alimentar, brindar atención veterinaria y dar en adopción responsable a los gatitxs abandonadxs en el Parque Centenario.
+palabras clave: gato, gatos, gatito, gatitos, gatita, gatitas, adopcion, hogar
+encabezado: ---
+
+
+Nosotrxs
+
+título: Gatites del Centenario - Nosotros
+descripción: Somos un grupo de voluntarixs que se ocupa de alimentar, brindar atención veterinaria y dar en adopción responsable a los gatitxs abandonadxs en el Parque Centenario
+palabras clave: gato, gatos, gatito, gatitos, gatita, gatitas, adopcion, hogar
+encabezado h1: ¿Quiénes somos?
+encabezado h2:¿Por qué rescatamos?
+
+
+
+Adopciones
+
+título: Gatites del Centenario - En adopción
+descripción: Te presentamos a nuestros gatitos rescatados que están esperando un hogar definitivo
+palabras clave: gato, gatos, gatito, gatitos, gatita, gatitas, adopcion, hogar
+encabezado h1: Gatites en adopción
+
+
+Sumate
+
+título: Gatites del Centenario - Sumate
+descripción: Estas son todas las formas en las que podés ayudarnos
+palabras clave: gato, gatos, gatito, gatitos, gatita, gatitas, adopcion, hogar
+encabezado h1: ---
+
+Contacto
+
+título: Gatites del Centenario - Contacto
+descripción: Si querés ser voluntario, adoptar o hacer una donación; comunicate con nosotros
+palabras clave: gato, gatos, gatito, gatitos, gatita, gatitas, adopcion, hogar
+encabezado h1: ¡Dejános tu mensaje y nos comunicaremos con vos!
+
+
+
+Rosita
+
+título: Gatites del Centenario - Rosita en adopción
+descripción: Somos un grupo de voluntarixs que se ocupa de alimentar, brindar atención veterinaria y dar en adopción responsable a los gatitxs abandonadxs en el Parque Centenario
+palabras clave: gato, gatos, gatito, gatitos, gatita, gatitas, adopcion, hogar
+encabezado h1: 
+
+    

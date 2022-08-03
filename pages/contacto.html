@@ -1,108 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Gatites del Centenario</title>
-        <link rel="shortcut icon" href="../img/favicon.png">
-        <link rel="stylesheet" href="../style.css">
-    </head>
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Si querés ser voluntario, adoptar o hacer una donación; comunicate con nosotros">
+    <meta name="keywords" content="gato, gatos, gatito, gatitos, gatita, gatitas, adopcion, hogar">
 
-    <!--logo gatites-->
-    <body>
-        <div class="contenedor">
-            <header class="bg__dkgrey" id="header">
-                <a href="../index.html">
-                    <img
-                        src="../img/logo.png"
-                        alt="logo gatites del centenario"
-                        class="header__logo">
-                </a>
-            </header>
+    <title>Gatites del Centenario - Contacto</title>
+    <link rel="shortcut icon" href="img/favicon.png">
 
-            <!--nav-->
-            <nav class="container__nav " id="mainNav">
-                <ul>
-                    <li>
-                        <a href="../index.html">HOME</a>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+
+    <!-- mi CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <header>
+    <!-- LOGO -->
+        <div class="text-center bg__dkgrey">
+            <a href="../index.html"><img src="../img/logo.png" alt="logo gatites del centenario" class="py-4 header__logo-md rotate"></a>
+        </div>
+    </header>
+        <!-- NAV -->
+    <nav class="navbar navbar-expand-md navbar-light bg-nav" id="botonera">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">
+                <img src="../img/logo.png" alt="logo gatites del centenario" class="py-4 mx-4 header__logo-sm rotate">
+            </a>
+
+            <button class="navbar-toggler me-4" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <svg viewBox="0 0 100 80">
+                    <rect></rect>
+                    <rect y="30"></rect>
+                    <rect y="60"></rect>
+                </svg>
+            </button>
+        
+            <nav class="collapse navbar-collapse bg-white" id="navbarSupportedContent">
+                <ul class="navbar-nav nav-pills mx-auto mb-lg-0 text-center nav-bar__links-list">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/nosotrxs.html">NOSOTRXS</a>
                     </li>
-                    <li>
-                        <a href="nosotrxs.html">SOBRE NOSOTRXS</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/adopciones.html" rel="nofollow">EN ADOPCION</a>
                     </li>
-                    <li>
-                        <a href="adopciones.html">ADOPCIONES</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/sumate.html">SUMATE</a>
                     </li>
-                    <li>
-                        <a href="sumate.html">SUMATE</a>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="../pages/contacto.html">CONTACTO</a>
                     </li>
-                    <li>
-                        <a href="contacto.html" class="bg__mdpink">CONTACTO</a>
-                    </li>
-                    <li>
-                        <a href="https://linktr.ee/gatitesdelcentenario" class="bg__mdgreen">DONA</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://linktr.ee/gatitesdelcentenario">DONA</a>
                     </li>
                 </ul>
             </nav>
-            <!--ends nav-->
+        </div>
+    </nav>
+    <!--ends nav-->
 
-            <main id="main">
-                <section class="container__contact bg__dkgrey">
-                    <figure id="izq">
-                        <form action="formulariodecontacto.php" class="form">
-                            <p class="verdana__text--S text__white"> ¡Dejános tu mensaje y nos comunicaremos con vos! </p>
-                            
-                            <label for="nombre" class="helvetica__text--Lt"></label>
-                            <input type="text" id="nombre" placeholder="Nombre">
-                            <label for="email" class="helvetica__text--Lt"></label>
-                            <input type="email" id="email" placeholder="Email">
-                            <label for="telefono" class="helvetica__text--Lt"></label>
-                            <input type="number" id="telefono" placeholder="Teléfono">
+    <main>
+        <section>
+            <div class="container-fuid gx-0">
+                <div class="row gx-0 bg__dkgrey px-4 py-4">
+                    <article class="col-sm-12 col-md-6 col-lg-5 ">
+                        <form class="form">
+                            <h1 class="text-white my-4">
+                                ¡Dejános tu mensaje y nos comunicaremos con vos!</h1>
 
-                            <p class="helvetica__text--S text__white"> Solicito info sobre: 
-                                <select name="solicito info sobre:" id="solicito info sobre:">
-                                    <option value="voluntario" class="helvetica__text--">Quiero ser voluntarix</option>
-                                    <option value="adoptar" class="helvetica__text--Lt text__dkgrey">Quiero adoptar</option>
-                                    <option value="donación" class="helvetica__text--Lt text__dkgrey">Quiero hacer una donación</option>
-                                </select></p>
+                            <!-- datos -->
+                            <div class="row">
+                                <div class="col">
+                                    <input type="text" class="form-control w-100 mb-2 " id="nombre" placeholder="Nombre">
+                                    <input type="email" class="form-control w-100 mb-2" id="email" placeholder="Email">
+                                    <input type="number" class="form-control w-100 mb-2" id="telefono" placeholder="Teléfono">
 
-                                <label for="mensaje" class="helvetica__text--Lt"></label>
-                                <textarea cols="40" rows="7" name="mensaje" id="mensaje" placeholder="Mensaje"></textarea>
+                            <!-- select -->
+                                    <label class="text-white mb-1">Solicito info sobre</label>
+                                    <select class="form-select-sm text-dkgrey w-100 mb-3" id="solicitoinfo">
+                                    <option>Quiero ser voluntario</option>
+                                    <option>Quiero adoptar</option>
+                                    <option>Quiero hacer una donación</option>
+                                    </select>
 
-                            <p class="helvetica__text--S text__white"> Quiero suscribirme al newletter 
-                            <input type="checkbox" id="newsletter" value="quiere suscribirse al newsletter"
-                            class="checkmark"></p>
-                            
-                            <button type="submit" id="boton" class="button-3d verdana__text--M text__dkgrey">ENVIAR</button>
-                            </form>
-                        </figure>
+                            <!-- mensaje -->
+                                    <textarea class="form-control-md w-100 mb-3" rows="6" id="textarea" placeholder="Mensaje" ></textarea>
 
-                        <figure class="map-responsive" id="mapa">
-                            <iframe
-                                class="iframe__mapa"
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.90753536289!2d-58.437822485139236!3d-34.60649958045875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca688994eb61%3A0xd055df0a7dafa86e!2sParque%20Centenario!5e0!3m2!1ses-419!2sar!4v1655349139808!5m2!1ses-419!2sar"
-                                width="600px"
-                                height="800px"
-                                style="border:0;"
-                                allowfullscreen=""
-                                loading="lazy"
-                                referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        </figure>
-                    </section>
-                </main>
+                            <!-- check -->
+                                    <div class="form-check d-flex mb-3">
+                                    <input class="form-check-input me-2" type="checkbox" value="quiere suscribirse al newsletter" id="newsletter">
+                                    <label class="form-check-input-label text-white" for="newletter"> Quiero suscribirme al newletter
+                                    </label>
+                                    </div>
 
-                <!--footer-->
-                <footer class="bg__dkgrey" id="footer">
-                    <div class="container__footer">
-                        <a href="https://www.facebook.com/gatitesdelcentenario" target="blank">
-                            <img src="../img/logoface.png" alt="logoface" class="footer__icon--sm"></a>
-                        <a href="https://www.tiktok.com/@gatitesdelcentenario?lang=es" target="blank">
-                            <img src="../img/logotiktok.png" alt="logotiktok" class="footer__icon--sm"></a>
-                        <a href="https://www.instagram.com/gatitesdelcentenario/" target="blank">
-                            <img src="../img/logoinsta.png" alt="logoinsta" class="footer__icon--sm"></a>
-                    </div>
-                </footer>
-                <!--ends footer-->
+                            <!-- boton -->
+                                    <div class="text-center">
+                                    <button type="submit" id="boton" class="button-3d mb-3">ENVIAR</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </article>
 
-            </body>
-        </html>
+                    <article class="col-sm-12 col-md-6 col-lg-7 map-responsive my-4">
+                        <iframe
+                            class="iframe__mapa"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.90753536289!2d-58.437822485139236!3d-34.60649958045875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca688994eb61%3A0xd055df0a7dafa86e!2sParque%20Centenario!5e0!3m2!1ses-419!2sar!4v1655349139808!5m2!1ses-419!2sar"
+                            width="600px"
+                            height="800px"
+                            style="border:0;"
+                            allowfullscreen=""
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+<!--footer-->
+<footer class="container-fluid my-3 bg__dkgrey">
+    <div class="container__footer py-2">
+        <a href="https://www.facebook.com/gatitesdelcentenario" target="blank">
+            <img src="../img/logoface.png" alt="logoface" class="me-3 footer__icon--sm"></a>
+        <a href="https://www.tiktok.com/@gatitesdelcentenario?lang=es" target="blank">
+            <img src="../img/logotiktok.png" alt="logotiktok" class="me-3 footer__icon--sm"></a>
+        <a href="https://www.instagram.com/gatitesdelcentenario/" target="blank">
+            <img src="../img/logoinsta.png" alt="logoinsta" class="me-3 footer__icon--sm"></a>
+    </div>
+</footer>
+<!--ends footer-->
+
+    <!-- JavaScript -->
+    <script src="../js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+/*//-- logo gatites --//*/
+.header__logo-md {
+	width:100px ;
+	@media (max-width: 767px) {
+	display: none}
+
+	&:hover {
+		transform: rotatez(30deg);
+		cursor: url(../img/cat_paw-pink.png), auto ;
+		transition: transform 1s }}
+
+.header__logo-sm {
+	width:80px ;
+	@media (min-width: 767px) {
+	display: none}}
+
+
+/*//-- nav --//*/
+#botonera {
+	ul {
+		li {
+			a {
+				color: $dkgrey-color;
+				text-decoration: none ;
+				font-family: $Main_font;
+				@include texto ($text_Md,1em,$text_Bold);
+				margin: 0 10px ;
+				&:hover {
+					background-color: map-get($map:$rosas,$key:"mdpink-color");}}
+
+					&:last-child a:hover {
+						background-color: $mdgreen-color;
+}}}}
+
+.nav-pills .nav-link.active,
+.show.nav-pills .nav-link {
+    background-color: map-get($map:$rosas,$key:"mdpink-color");   
+}
+
+.navbar-toggler{
+	width: 50px;
+	height: 50px;
+	fill:rgba(255,255, 255, 0.7);
+	border-color: rgba(255,255, 255, 0.7);
+	rect{
+		width: 100%;
+		height: 7px;
+	}
+}
+
+
+/*//-- footer --//*/
+.container__footer {
+	@include d-flex (end,center,row);
+}
+
+.footer__icon--sm {
+    width: 30px;
+    list-style: none;
+    display: flex ;
+
+&:hover {
+    transform: scale(1.1) ;
+    cursor: url(../img/cat_paw-vanilla.png), auto;
+    transition: transform 1s 
+}}
+
+
+

@@ -1,67 +1,99 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Gatites del Centenario</title>
-        <link rel="shortcut icon" href="img/favicon.png">
-        <link rel="stylesheet" href="style.css">
-    </head>
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Somos un grupo de voluntarios que se ocupa de alimentar, brindar atención veterinaria y dar en adopción responsable a los gatitos abandonados en el Parque Centenario">
+    <meta name="keywords" content="gato, gatos, gatito, gatitos, gatita, gatitas, adopcion, hogar">
+    <meta name="robots" contents="noindex,follow">
 
-    <!--logo gatites-->
-    <body>
-        <div class="contenedor">
-            <header class="bg__dkgrey" id="header">
-                <a href="index.html">
-                    <img src="img/logo.png" alt="logo gatites del centenario" class="header__logo">
-                </a>
-            </header>
+    <title>Gatites del Centenario - Inicio</title>
+    <link rel="shortcut icon" href="img/favicon.png">
 
-            <!--nav-->
-            <nav class="container__nav " id="mainNav">
-                <ul>
-                    <li>
-                        <a href="index.html" class="bg__mdpink">HOME</a>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- mi CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+    <!-- LOGO -->
+        <div class="text-center bg__dkgrey">
+            <a href="index.html"><img src="img/logo.png" alt="logo gatites del centenario" class="py-4 header__logo-md rotate"></a>
+        </div>
+    </header>
+        <!-- NAV -->
+    <nav class="navbar navbar-expand-md navbar-light bg-nav" id="botonera">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/logo.png" alt="logo gatites del centenario" class="py-4 mx-4 header__logo-sm rotate">
+            </a>
+
+            <button class="navbar-toggler me-4" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <svg viewBox="0 0 100 80">
+                    <rect></rect>
+                    <rect y="30"></rect>
+                    <rect y="60"></rect>
+                </svg>
+            </button>
+        
+            <nav class="collapse navbar-collapse bg-white" id="navbarSupportedContent">
+                <ul class="navbar-nav nav-pills mx-auto mb-lg-0 text-center nav-bar__links-list">
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/nosotrxs.html">NOSOTRXS</a>
                     </li>
-                    <li>
-                        <a href="pages/nosotrxs.html">SOBRE NOSOTRXS</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/adopciones.html" rel="nofollow">EN ADOPCION</a>
                     </li>
-                    <li>
-                        <a href="pages/adopciones.html">ADOPCIONES</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/sumate.html">SUMATE</a>
                     </li>
-                    <li>
-                        <a href="pages/sumate.html">SUMATE</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/contacto.html">CONTACTO</a>
                     </li>
-                    <li>
-                        <a href="pages/contacto.html">CONTACTO</a>
-                    </li>
-                    <li>
-                        <a href="https://linktr.ee/gatitesdelcentenario" class="bg__mdgreen">DONA</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://linktr.ee/gatitesdelcentenario">DONA</a>
                     </li>
                 </ul>
             </nav>
-            <!--ends nav-->
-
-            <main id="main">
-                <div class="container__index ">
-                    <img src="img/index.jpg" alt="index" class="index__foto">
-                </div>
-            </main>
-
-            <!--footer-->
-            <footer class="bg__dkgrey" id="footer">
-                <div class="container__footer">
-                    <a href="https://www.facebook.com/gatitesdelcentenario" target="blank">
-                        <img src="img/logoface.png" alt="logoface" class="footer__icon--sm"></a>
-                    <a href="https://www.tiktok.com/@gatitesdelcentenario?lang=es" target="blank">
-                        <img src="img/logotiktok.png" alt="logotiktok" class="footer__icon--sm"></a>
-                    <a href="https://www.instagram.com/gatitesdelcentenario/" target="blank">
-                        <img src="img/logoinsta.png" alt="logoinsta" class="footer__icon--sm"></a>
-                </div>
-            </footer>
-            <!--ends footer-->
-
         </div>
-    </body>
+    </nav>
+    <!--ends nav-->
+
+    <main>
+        <section>
+        <div class="container-fluid gx-0">
+            <div class="container__index w-100">
+                <img src="img/index2.jpg" alt="gatito en el Parque" class="foto__index w-100">
+            
+                <div class="textos_index text-center">  
+                <img src="img/sabias__index.png" alt="¿Sabías que en el Parque centenario hay más de 40 gatos en peligro?" class="texto1__index">
+            
+                <img src="img/podesayudarlos__index.png" alt="¡Podés ayudarlos!" class="texto2__index">
+            </div></div>
+        </div>
+    </section>
+    </main>
+
+    <!--footer-->
+    <footer class="container-fluid my-3 bg__dkgrey">
+        <div class="container__footer py-2">
+            <a href="https://www.facebook.com/gatitesdelcentenario" target="blank">
+                <img src="img/logoface.png" alt="logoface" class="me-3 footer__icon--sm"></a>
+            <a href="https://www.tiktok.com/@gatitesdelcentenario?lang=es" target="blank">
+                <img src="img/logotiktok.png" alt="logotiktok" class="me-3 footer__icon--sm"></a>
+            <a href="https://www.instagram.com/gatitesdelcentenario/" target="blank">
+                <img src="img/logoinsta.png" alt="logoinsta" class="me-3 footer__icon--sm"></a>
+        </div>
+    </footer>
+    <!--ends footer-->
+
+    <!-- JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
 </html>

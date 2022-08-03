@@ -1,97 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Gatites del Centenario</title>
-        <link rel="shortcut icon" href="../img/favicon.png">
-        <link rel="stylesheet" href="../style.css">
-    </head>
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Somos un grupo de voluntarios que se ocupa de alimentar, brindar atención veterinaria y dar en adopción responsable a los gatitos abandonados en el Parque Centenario">
+    <meta name="keywords" content="gato, gatos, gatito, gatitos, gatita, gatitas, adopcion, hogar">
 
-    <!--logo gatites-->
-    <body>
-        <div class="contenedor">
-            <header class="bg__dkgrey" id="header">
-                <a href="../index.html">
-                    <img
-                        src="../img/logo.png"
-                        alt="logo gatites del centenario"
-                        class="header__logo">
-                </a>
-            </header>
+    <title>Gatites del Centenario - Nosotros</title>
+    <link rel="shortcut icon" href="img/favicon.png">
 
-            <!--nav-->
-            <nav class="container__nav" id="mainNav">
-                <ul>
-                    <li>
-                        <a href="../index.html">HOME</a>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+
+    <!-- mi CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <header>
+    <!-- LOGO -->
+        <div class="text-center bg__dkgrey">
+            <a href="../index.html"><img src="../img/logo.png" alt="logo gatites del centenario" class="py-4 header__logo-md rotate"></a>
+        </div>
+    </header>
+        <!-- NAV -->
+    <nav class="navbar navbar-expand-md navbar-light bg-nav" id="botonera">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">
+                <img src="../img/logo.png" alt="logo gatites del centenario" class="py-4 mx-4 header__logo-sm rotate">
+            </a>
+
+            <button class="navbar-toggler me-4" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <svg viewBox="0 0 100 80">
+                    <rect></rect>
+                    <rect y="30"></rect>
+                    <rect y="60"></rect>
+                </svg>
+            </button>
+        
+            <nav class="collapse navbar-collapse bg-white" id="navbarSupportedContent">
+                <ul class="navbar-nav nav-pills mx-auto mb-lg-0 text-center nav-bar__links-list">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="../pages/nosotrxs.html">NOSOTRXS</a>
                     </li>
-                    <li>
-                        <a href="nosotrxs.html" class="bg__mdpink">SOBRE NOSOTRXS</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/adopciones.html" rel="nofollow">EN ADOPCION</a>
                     </li>
-                    <li>
-                        <a href="adopciones.html">ADOPCIONES</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/sumate.html">SUMATE</a>
                     </li>
-                    <li>
-                        <a href="sumate.html">SUMATE</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/contacto.html">CONTACTO</a>
                     </li>
-                    <li>
-                        <a href="contacto.html">CONTACTO</a>
-                    </li>
-                    <li>
-                        <a href="https://linktr.ee/gatitesdelcentenario" class="bg__mdgreen">DONA</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://linktr.ee/gatitesdelcentenario">DONA</a>
                     </li>
                 </ul>
             </nav>
-            <!--ends nav-->
-
-            <main id="main">
-                <section class="container__main bg__ltpink">
-                    <figure id="izq">
-                        <img src="../img/nosotrxs.jpg" alt="foto nosotrxs" class="nosotrxs__foto">
-                    </figure>
-
-                    <figure id="der1">
-                        <h1 class="verdana__text--L text__dkgrey">
-                            ¿Quiénes somos?<br><br></h1>
-                        <p class="helvetica__text--M text__dkgreen">
-                            Somos un grupo de voluntarixs que desde octubre del 2019
-                            <br>
-                            nos ocupamos de alimentar, brindar atención veterinaria
-                            <br>
-                            y dar en adopción responsable
-                            <br>
-                            a la colonia de 40 gatitxs abandonadxs en el Parque Centenario.<br>
-                            ¡Sumate o colaborá!</p>
-                    </figure>
-
-                    <figure id="der2">
-                        <h1 class="verdana__text--L text__dkgrey">
-                            ¿Por qué rescatamos?<br><br></h1>
-                        <p class="helvetica__text--M text__dkgrey">
-                            ¿Sabías que los gatos abandonados suelen enfermarse y vivir pocos años?<br>
-                            ¿Sabías que los gatos que viven a la interperie a veces no consiguen<br>
-                            alimento o son envenenados o atacados por perros?<br>
-                            ¿Sabías que una gata no castrada puede tener mas de 30 bebés por año?<br>
-                            ¿Sabías que muy pocos de esos sobreviven porque nacen enfermos?</p>
-                    </figure>
-                </section>
-            </main>
-
-            <!--footer-->
-            <footer class="bg__dkgrey" id="footer">
-                <div class="container__footer">
-                    <a href="https://www.facebook.com/gatitesdelcentenario" target="blank">
-                        <img src="../img/logoface.png" alt="logoface" class="footer__icon--sm"></a>
-                    <a href="https://www.tiktok.com/@gatitesdelcentenario?lang=es" target="blank">
-                        <img src="../img/logotiktok.png" alt="logotiktok" class="footer__icon--sm"></a>
-                    <a href="https://www.instagram.com/gatitesdelcentenario/" target="blank">
-                        <img src="../img/logoinsta.png" alt="logoinsta" class="footer__icon--sm"></a>
-                </div>
-            </footer>
-            <!--ends footer-->
-
         </div>
-    </body>
+    </nav>
+    <!--ends nav-->
+
+    <main>
+        <section>
+            <div class="container-fuid">
+                <div class="row gx-0 bg__ltpink">
+                    <article class="col-sm-12 col-md-6 col-lg-5">
+                        <img src="../img/nosotrxs.jpg" alt="gato tímido en el Parque" class="w-100">
+                    </article>
+                    <article class="col-sm-12 col-md-6 col-lg-7 columna">
+                        <figure class="column__text">
+                            <h1 class="text__dkgrey">
+                                ¿Quiénes somos?</h1>
+                            <p class="text__dkgreen">
+                                Somos un grupo de voluntarixs que desde octubre del 2019</p>
+                            <p class="text__dkgreen">
+                                nos ocupamos de alimentar, brindar atención veterinaria</p>
+                            <p class="text__dkgreen">
+                                y dar en adopción responsable</p>
+                                <p class="text__dkgreen">    
+                                a la colonia de 40 gatitxs abandonadxs en el Parque Centenario.</p>
+                            <p class="text__dkgreen">
+                                ¡Sumate o colaborá!</p>
+                        </figure>
+                        <figure class="column__text">
+                            <h2 class="text__dkgrey">
+                                ¿Por qué rescatamos?</h2>
+                            <p class="text__dkgrey">
+                                ¿Sabías que los gatos abandonados suelen enfermarse y vivir pocos años?</p>
+                            <p class="text__dkgrey">    
+                                ¿Sabías que los gatos que viven a la interperie a veces no consiguen
+                                alimento o son envenenados o atacados por perros?</p>
+                            <p class="text__dkgrey">
+                                ¿Sabías que una gata no castrada puede tener mas de 30 bebés por año?</p>
+                            <p ID="text__dkgrey">
+                                ¿Sabías que muy pocos de esos sobreviven porque nacen enfermos?</p>
+                        </figure>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+<!--footer-->
+<footer class="container-fluid my-3 bg__dkgrey">
+    <div class="container__footer py-2">
+        <a href="https://www.facebook.com/gatitesdelcentenario" target="blank">
+            <img src="../img/logoface.png" alt="logoface" class="me-3 footer__icon--sm"></a>
+        <a href="https://www.tiktok.com/@gatitesdelcentenario?lang=es" target="blank">
+            <img src="../img/logotiktok.png" alt="logotiktok" class="me-3 footer__icon--sm"></a>
+        <a href="https://www.instagram.com/gatitesdelcentenario/" target="blank">
+            <img src="../img/logoinsta.png" alt="logoinsta" class="me-3 footer__icon--sm"></a>
+    </div>
+</footer>
+<!--ends footer-->
+
+    <!-- JavaScript -->
+    <script src="../js/bootstrap.min.js"></script>
+</body>
 </html>
