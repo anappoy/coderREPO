@@ -26,7 +26,7 @@
 				@include texto ($text_Md,1em,$text_Bold);
 				margin: 0 10px ;
 				&:hover {
-					background-color: map-get($map:$rosas,$key:"mdpink-color");}}
+					background-color: $mdpink-color;}}
 
 					&:last-child a:hover {
 						background-color: $mdgreen-color;
@@ -34,7 +34,7 @@
 
 .nav-pills .nav-link.active,
 .show.nav-pills .nav-link {
-    background-color: map-get($map:$rosas,$key:"mdpink-color");   
+    background-color: $mdpink-color;
 }
 
 .navbar-toggler{

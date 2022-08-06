@@ -38,7 +38,7 @@ p {
     background-color: $dkgrey-color }
 
 .bg__ltpink {
-    background-color:map-get($map:$rosas,$key:"ltpink-color"); }
+    background-color: $ltpink-color; }
 
 .bg__mdgreen {
     background-color: $mdgreen-color;}

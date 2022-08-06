@@ -1,31 +1,39 @@
-.page_404{ padding:40px 0; background:#fff; font-family: 'Arvo', serif;
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Raleway:ital,wght@1,800;1,900&display=swap');
+
+.page_404 { 
+  padding:30px 0; 
+  background:#fff; 
 }
 
-.page_404  img{ width:100%;}
-
-.simon{
-  background-image:url("../img/SimonCat.gif");
-    height: 600px;
-    background-position: center;
-
+.page_404  img { 
+  width:100%;
+  padding: 10px;
 }
- 
- .simon h3{
- font-size:60px;
- }
- 
-  .contant_box_404{
-       font-size:30px;
-       }
-       
-       .link_404{      
-  color: #fff!important;
-    padding: 10px 20px;
-    background: $dkgrey-color;
-    margin: 20px 0;
-    display: inline-block;
-  }
 
-  .contant_box_404{ 
-    margin-top:0px;
-  }
+.simon {
+  width:100%;
+}
+.simon h3 {
+  @include texto (calc(2em + 5vw),0.6em,$text_Bold);
+  color: $dkpink-color;
+  font-family: "Raleway", sans-serif;
+}
+
+.contant_box_404 {
+    p {
+    font-size: calc(0.2em + 2vw);
+    color: rgb(50, 125, 41);
+    color: $dkgreen-color;
+    font-family: "verdana"
+    }
+
+.button-link {    
+  @extend .button-base;
+  background: $ltgreen-gradient;
+  color: $dkgrey-color;
+  @include texto (calc(0.3em + 2vw),1.4em,$text_Bold);
+  text-transform: uppercase;  
+  padding: 10px 20px;
+  margin: 10px 0;
+}}
+

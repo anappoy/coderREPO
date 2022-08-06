@@ -1,9 +1,9 @@
 /*//-- colores --//*/
-/*//-- mapa colores --//*/
 /*//-- texto --//*/
 /*//-- width 100% --//*/
 /*//--extends--//*/
-.button-base, .button-3d, .view a.button-info {
+@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Raleway:ital,wght@1,800;1,900&display=swap");
+.button-base, .button-3d, .view a.button-info, .contant_box_404 .button-link {
   display: inline-block;
   text-decoration: none;
   border: none;
@@ -95,39 +95,42 @@
 }
 
 .page_404 {
-  padding: 40px 0;
+  padding: 30px 0;
   background: #fff;
-  font-family: "Arvo", serif;
 }
 
 .page_404 img {
   width: 100%;
+  padding: 10px;
 }
 
 .simon {
-  background-image: url("../img/SimonCat.gif");
-  height: 600px;
-  background-position: center;
+  width: 100%;
 }
 
 .simon h3 {
-  font-size: 60px;
+  font-size: calc(2em + 5vw);
+  line-height: 0.6em;
+  font-weight: 550;
+  color: rgb(255, 130, 222);
+  font-family: "Raleway", sans-serif;
 }
 
-.contant_box_404 {
-  font-size: 30px;
+.contant_box_404 p {
+  font-size: calc(0.2em + 2vw);
+  color: rgb(50, 125, 41);
+  color: rgb(50, 125, 41);
+  font-family: "verdana";
 }
-
-.link_404 {
-  color: #fff !important;
+.contant_box_404 .button-link {
+  background: linear-gradient(180deg, rgb(228, 247, 197) 0%, rgb(194, 239, 172) 100%);
+  color: rgb(35, 35, 35);
+  font-size: calc(0.3em + 2vw);
+  line-height: 1.4em;
+  font-weight: 550;
+  text-transform: uppercase;
   padding: 10px 20px;
-  background: rgb(35, 35, 35);
-  margin: 20px 0;
-  display: inline-block;
-}
-
-.contant_box_404 {
-  margin-top: 0px;
+  margin: 10px 0;
 }
 
 /*//-- common --//*/
@@ -491,6 +494,7 @@ label {
 }
 
 input, textarea {
+  padding: 5px 10px;
   border: none;
   box-sizing: border-box;
 }
@@ -498,6 +502,10 @@ input, textarea {
 .check {
   display: inline-block;
   justify-content: end;
+}
+
+.form-select-sm {
+  color: rgb(35, 35, 35);
 }
 
 .checkmark {

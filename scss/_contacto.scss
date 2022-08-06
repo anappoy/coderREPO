@@ -11,12 +11,16 @@ label {
     display:block }
 
 input,textarea  {
+    padding: 5px 10px;
     border: none;
     box-sizing: border-box }
 
 .check  {
     display: inline-block;
     justify-content: end }
+
+.form-select-sm {
+    color:$dkgrey-color;}
 
 .checkmark  {
     position: right;
