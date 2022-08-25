@@ -1,5 +1,6 @@
 /*//-- base index --//*/
 .container__index {
+	width:$w-100;
     @extend .d-flex_center;
 	overflow: hidden ;
 	position: relative ;

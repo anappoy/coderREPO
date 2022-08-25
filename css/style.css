@@ -21,6 +21,7 @@
 /*//-- logo gatites --//*/
 .header__logo-md {
   width: 100px;
+  margin: 1.5rem 0;
 }
 @media (max-width: 767px) {
   .header__logo-md {
@@ -35,6 +36,7 @@
 
 .header__logo-sm {
   width: 80px;
+  margin: 1.5rem;
 }
 @media (min-width: 767px) {
   .header__logo-sm {
@@ -67,6 +69,7 @@
 .navbar-toggler {
   width: 50px;
   height: 50px;
+  margin-right: 1.5rem;
   fill: rgba(255, 255, 255, 0.7);
   border-color: rgba(255, 255, 255, 0.7);
 }
@@ -81,12 +84,14 @@
   justify-content: end;
   align-items: center;
   flex-direction: row;
+  padding: 0.5rem 0;
 }
 
 .footer__icon--sm {
   width: 30px;
   list-style: none;
   display: flex;
+  margin-right: 1rem;
 }
 .footer__icon--sm:hover {
   transform: scale(1.1);
@@ -221,6 +226,7 @@ p {
 
 /*//-- base index --//*/
 .container__index {
+  width: 100%;
   overflow: hidden;
   position: relative;
 }
@@ -541,6 +547,7 @@ input, textarea {
 .map-responsive {
   overflow: hidden;
   position: relative;
+  margin: 1.5rem 0;
   padding: 0px 10px;
 }
 
