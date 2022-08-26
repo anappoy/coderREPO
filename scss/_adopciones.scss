@@ -52,6 +52,12 @@
     background: $dkgrey-color;
     margin: 20px 0 0 0
 }
+.button-volver  {
+    @extend .button-base;
+    background: $dkgrey-color;
+    color: $white-color;
+    box-shadow: 0 0 1px #000;
+}
 
 /*//-- animaciones adopciones --//*/
 .view-first .mask {

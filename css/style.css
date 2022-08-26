@@ -3,7 +3,7 @@
 /*//-- width 100% --//*/
 /*//--extends--//*/
 @import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Raleway:ital,wght@1,800;1,900&display=swap");
-.button-base, .button-3d, .view a.button-info, .contant_box_404 .button-link {
+.button-base, .button-3d, .button-volver, .view a.button-info, .contant_box_404 .button-link {
   display: inline-block;
   text-decoration: none;
   border: none;
@@ -431,6 +431,12 @@ p {
   padding: 10px;
   background: rgb(35, 35, 35);
   margin: 20px 0 0 0;
+}
+
+.button-volver {
+  background: rgb(35, 35, 35);
+  color: rgb(247, 244, 241);
+  box-shadow: 0 0 1px #000;
 }
 
 /*//-- animaciones adopciones --//*/
